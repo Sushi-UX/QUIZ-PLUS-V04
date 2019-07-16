@@ -122,6 +122,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="Question3" destination="bLt-98-qMr" id="VCk-jv-fYk"/>
+                        <outlet property="Question4" destination="Dop-Si-trF" id="dcK-75-Bqo"/>
+                        <outlet property="TimerCountdown" destination="YXo-31-m2N" id="12E-1T-ZAB"/>
+                        <outlet property="falseButton" destination="6FG-ru-Zd8" id="pe0-s4-BsT"/>
+                        <outlet property="nextButton" destination="zGa-Xc-BBV" id="CMb-oO-PxL"/>
+                        <outlet property="playAgainButton" destination="Va8-yF-n3c" id="OSC-qn-B7f"/>
+                        <outlet property="questionField" destination="dYL-FO-W8k" id="C2V-JT-686"/>
+                        <outlet property="trueButton" destination="X3m-DM-4Bv" id="Qtt-GI-H3s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,19 +8,10 @@
 
 import AudioToolbox
 
-
-
 struct SoundManager {
     
     var gameSound: SystemSoundID = 0
     
-    
-    
-    mutating func loadGameStartSound() {
-        let path = Bundle.main.path(forResource: "GameSound", ofType: "wav")
-        let soundUrl = URL(fileURLWithPath: path!)
-        AudioServicesCreateSystemSoundID(soundUrl as CFURL, &gameSound)
-    }
     
     mutating func loadCorrectSound() {
         let correctSound = Bundle.main.path(forResource: "correct", ofType: "wav")
@@ -34,7 +25,12 @@ struct SoundManager {
         AudioServicesCreateSystemSoundID(soundUrl as CFURL, &gameSound)
     }
     
-
+    mutating func loadGameStartSound() {
+        let path = Bundle.main.path(forResource: "GameSound", ofType: "wav")
+        let soundUrl = URL(fileURLWithPath: path!)
+        AudioServicesCreateSystemSoundID(soundUrl as CFURL, &gameSound)
+    }
+    
     func playGameStartSound() {
         AudioServicesPlaySystemSound(gameSound)
     }

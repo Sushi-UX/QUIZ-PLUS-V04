@@ -16,6 +16,9 @@
 		FBCBF47722DDAC5C002C56B1 /* QuizObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCBF47622DDAC5C002C56B1 /* QuizObject.swift */; };
 		FBCBF47922DDAE02002C56B1 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCBF47822DDAE02002C56B1 /* QuizManager.swift */; };
 		FBCBF47B22DDB95A002C56B1 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCBF47A22DDB95A002C56B1 /* SoundManager.swift */; };
+		FBCBF47F22DDDCC6002C56B1 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = FBCBF47C22DDDCC6002C56B1 /* correct.wav */; };
+		FBCBF48022DDDCC6002C56B1 /* GameSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = FBCBF47D22DDDCC6002C56B1 /* GameSound.wav */; };
+		FBCBF48122DDDCC6002C56B1 /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = FBCBF47E22DDDCC6002C56B1 /* wrong.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		FBCBF47622DDAC5C002C56B1 /* QuizObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizObject.swift; sourceTree = "<group>"; };
 		FBCBF47822DDAE02002C56B1 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 		FBCBF47A22DDB95A002C56B1 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		FBCBF47C22DDDCC6002C56B1 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correct.wav; sourceTree = "<group>"; };
+		FBCBF47D22DDDCC6002C56B1 /* GameSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSound.wav; sourceTree = "<group>"; };
+		FBCBF47E22DDDCC6002C56B1 /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +68,19 @@
 		FBCBF45D22DDA838002C56B1 /* Quiz Plus v4 */ = {
 			isa = PBXGroup;
 			children = (
+				FBCBF47C22DDDCC6002C56B1 /* correct.wav */,
+				FBCBF47D22DDDCC6002C56B1 /* GameSound.wav */,
+				FBCBF47E22DDDCC6002C56B1 /* wrong.wav */,
+				FBCBF47622DDAC5C002C56B1 /* QuizObject.swift */,
+				FBCBF45E22DDA838002C56B1 /* AppDelegate.swift */,
+				FBCBF47A22DDB95A002C56B1 /* SoundManager.swift */,
+				FBCBF47822DDAE02002C56B1 /* QuizManager.swift */,
+				FBCBF46022DDA838002C56B1 /* ViewController.swift */,
+				FBCBF46222DDA838002C56B1 /* Main.storyboard */,
+				FBCBF46A22DDA83A002C56B1 /* LaunchScreen.storyboard */,
 				FBCBF47522DDA881002C56B1 /* Systems */,
 				FBCBF47422DDA874002C56B1 /* Controllers */,
 				FBCBF47322DDA85E002C56B1 /* Storyboards */,
-				FBCBF45E22DDA838002C56B1 /* AppDelegate.swift */,
 				FBCBF46822DDA83A002C56B1 /* Assets.xcassets */,
 				FBCBF46D22DDA83A002C56B1 /* Info.plist */,
 				FBCBF46522DDA838002C56B1 /* Quiz_Plus_v4.xcdatamodeld */,
@@ -76,8 +91,6 @@
 		FBCBF47322DDA85E002C56B1 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				FBCBF46222DDA838002C56B1 /* Main.storyboard */,
-				FBCBF46A22DDA83A002C56B1 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -85,7 +98,6 @@
 		FBCBF47422DDA874002C56B1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FBCBF46022DDA838002C56B1 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -93,9 +105,6 @@
 		FBCBF47522DDA881002C56B1 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
-				FBCBF47622DDAC5C002C56B1 /* QuizObject.swift */,
-				FBCBF47822DDAE02002C56B1 /* QuizManager.swift */,
-				FBCBF47A22DDB95A002C56B1 /* SoundManager.swift */,
 			);
 			path = Systems;
 			sourceTree = "<group>";
@@ -159,8 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBCBF46C22DDA83A002C56B1 /* LaunchScreen.storyboard in Resources */,
+				FBCBF47F22DDDCC6002C56B1 /* correct.wav in Resources */,
 				FBCBF46922DDA83A002C56B1 /* Assets.xcassets in Resources */,
 				FBCBF46422DDA838002C56B1 /* Main.storyboard in Resources */,
+				FBCBF48122DDDCC6002C56B1 /* wrong.wav in Resources */,
+				FBCBF48022DDDCC6002C56B1 /* GameSound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
